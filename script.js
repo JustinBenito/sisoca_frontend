@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submitButton.textContent = "Submit";
         submitButton.disabled = false;
         instructions.textContent = "Processing complete. Results are displayed.";
-      }, 10000); // 10 Seconds your actual processing time
+      }, 2000); // 10 Seconds your actual processing time
   
       // Check if severity is selected
       if (selectedSeverity === "unselect") {
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   
       try {
-        const response = await fetch('http://doc0wgggoko0ko8ggogwk4gg.5.189.144.48.sslip.io/run_model/', {
+        const response = await fetch('https://sisoca-backend.ssn.lat/run_model/', {
           method: 'POST',
           body: formData
         });
